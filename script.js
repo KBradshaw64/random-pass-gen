@@ -17,7 +17,7 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   length = prompt("how many characters would you like in your password? (8-128)");
   while(length < 8 || length > 128){
-    length = prompt("how many characters would you like in your password? (8-128)");
+    length = prompt("Password MUST be between 8 and 128 characters");
   }
   includeUpper = confirm("Would you like upper case letters in your password?");
   includeNumbers = confirm("Would you like to include numbers in your password?");
