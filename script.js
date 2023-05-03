@@ -16,8 +16,8 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   length = prompt("how many characters would you like in your password? (8-128)");
-  if(length < 8 || length > 128){
-    return;
+  while(length < 8 || length > 128){
+    length = prompt("how many characters would you like in your password? (8-128)");
   }
   includeUpper = confirm("Would you like upper case letters in your password?");
   includeNumbers = confirm("Would you like to include numbers in your password?");
@@ -56,14 +56,14 @@ function generatePassword(includeUpperBoolean, includeNumbersBoolean, includeSpe
 
 }
 
-function generatePasswordlowercase() {
-  var password = "";
-  var counter = length;
-  var sampleLength = lettersLower.length;
-  while(counter > 0){
-    var index = Math.floor(Math.random()*sampleLength);
-    password += lettersLower[index];
-    counter--;
-  }
-  return password;
-}
+// function generatePasswordlowercase() {
+//   var password = "";
+//   var counter = length;
+//   var sampleLength = lettersLower.length;
+//   while(counter > 0){
+//     var index = Math.floor(Math.random()*sampleLength);
+//     password += lettersLower[index];
+//     counter--;
+//   }
+//   return password;
+// }
