@@ -41,7 +41,7 @@ function generatePassword(includeUpperBoolean, includeNumbersBoolean, includeSpe
     console.log("includeUpperBoolean is false");
   }
   if(includeNumbersBoolean === true){
-    console.log("includeNumbersBoolean is true")
+    console.log("includeNumbersBoolean is true");
     sampleArray = sampleArray.concat(numbers);
   }
   if(includeNumbersBoolean === false){
