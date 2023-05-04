@@ -64,7 +64,7 @@ function generatePassword(includeUpperBoolean, includeNumbersBoolean, includeSpe
     counter--;
   }
   return password;
-
+  
 }
 
 // function generatePasswordlowercase() {
