@@ -37,15 +37,24 @@ function generatePassword(includeUpperBoolean, includeNumbersBoolean, includeSpe
     console.log("includeUpperBoolean is true");
     sampleArray = sampleArray.concat(lettersUpper);
   }
+  if(includeUpperBoolean === false){
+    console.log("includeUpperBoolean is false");
+  }
   if(includeNumbersBoolean === true){
     console.log("includeNumbersBoolean is true")
     sampleArray = sampleArray.concat(numbers);
   }
+  if(includeNumbersBoolean === false){
+    console.log("includeNumbersBoolean is false");
+  }  
   if(includeSpecialBoolean === true){
-    console.log("includeSpecialBoolean is true")
+    console.log("includeSpecialBoolean is true");
     sampleArray = sampleArray.concat(special);
   }
-  
+  if(includeSpecialBoolean === false){
+    console.log("includeSpecialBoolean is false");
+  }  
+
   var password = "";
   var counter = length;
   var sampleLength = sampleArray.length;
